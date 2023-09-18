@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .accordion-item{
+      border: 2px solid #ddd;
+      padding-top: 2px;
+      padding-bottom: 2px;
+
+    }
+   
+    .accordion-item .accordion-header h2{
+      display: flex;
+      width: 100%;
+    }
+    .star-six {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red;
+        position: relative;
+      }
+      .star-six:after {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid red;
+        position: absolute;
+        content: "";
+        top: 30px;
+        left: -50px;
+      }
+    
+}
